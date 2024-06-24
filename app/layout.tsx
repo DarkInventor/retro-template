@@ -12,6 +12,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 import AnimatedListDemo from "./animatedlist-demo/page"
 import GlobePage from "./globe-section/page"
 import NostalgiaPage from "./nostalgia-section/page"
+import RetroGrid from "@/components/magicui/retro-grid"
 
 export const metadata: Metadata = {
   title: {
@@ -53,8 +54,11 @@ export default function RootLayout({ children }: RootLayoutProps) {
                 <div className="pt-20 flex flex-col lg:flex-row justify-center items-center space-y-8 lg:space-y-0 lg:space-x-8">
                   <GlobePage />
                   <AnimatedListDemo />
+                  
                 </div>
+                
               </div>
+           
             </div>
             <div className="pt-20">
               <div className="z-10 flex min-h-64 items-center justify-center rounded-lg border bg-white dark:bg-black">
