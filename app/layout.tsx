@@ -4,6 +4,7 @@ import { Metadata } from "next"
 import { siteConfig } from "@/config/site"
 import { fontSans } from "@/lib/fonts"
 import { cn } from "@/lib/utils"
+import RetroGrid from "@/components/magicui/retro-grid"
 import TextReveal from "@/components/magicui/text-reveal"
 import { SiteHeader } from "@/components/site-header"
 import { TailwindIndicator } from "@/components/tailwind-indicator"
@@ -12,7 +13,8 @@ import { ThemeProvider } from "@/components/theme-provider"
 import AnimatedListDemo from "./animatedlist-demo/page"
 import GlobePage from "./globe-section/page"
 import NostalgiaPage from "./nostalgia-section/page"
-import RetroGrid from "@/components/magicui/retro-grid"
+import GameCard from "./game-card/page"
+import { SiteFooter } from "@/components/site-footer"
 
 export const metadata: Metadata = {
   title: {
@@ -54,14 +56,11 @@ export default function RootLayout({ children }: RootLayoutProps) {
                 <div className="pt-20 flex flex-col lg:flex-row justify-center items-center space-y-8 lg:space-y-0 lg:space-x-8">
                   <GlobePage />
                   <AnimatedListDemo />
-                  
                 </div>
-                
               </div>
-           
             </div>
             <div className="pt-20">
-              <div className="z-10 flex min-h-64 items-center justify-center rounded-lg border bg-white dark:bg-black">
+              <div className="z-10 flex min-h-64 items-center justify-center rounded-lg bg-white dark:bg-black">
                 {/* <NostalgiaPage /> */}
                 <TextReveal
                   text="Unlock the Nostalgia
@@ -81,12 +80,22 @@ Join a Community of Gamers.
 
 "
                 />
+                
               </div>
+      
             </div>
+            <GameCard />
+            <SiteFooter className=" fixed border-t bottom-0 inset-x-0 sm:static bg-neutral-100" />
+            
+            {/* <div className="fixed bottom-0 inset-x-0 sm:static bg-neutral-900/3"> */}
+             
+            {/* </div> */}
             <TailwindIndicator />
+            
           </ThemeProvider>
         </body>
       </html>
     </>
   )
 }
+
