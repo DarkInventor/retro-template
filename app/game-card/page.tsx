@@ -13,74 +13,52 @@ import {
           Here are some of our fav games 🎮
         </p>
      
-      <MagicContainer
+        <MagicContainer
         className={
-          "mt-60 flex h-[500px] w-full flex-col gap-4 px-14 pb-10 md:mt-20 lg:mt-20 lg:h-[300px] lg:flex-row "
+          "mt-60 flex h-auto w-full flex-wrap justify-center gap-4 px-14 pb-10 md:mt-20 lg:mt-20"
         }
       >
         
-       
-        <MagicCard className="flex w-full cursor-pointer flex-col items-center justify-center overflow-hidden p-20 shadow-2xl">
+        <MagicCard className="flex w-4/2 sm:w-4/3 md:w-1/4 lg:1/4  cursor-pointer flex-col items-center justify-center overflow-hidden p-20 shadow-2xl">
           <p className="z-10 whitespace-nowrap text-4xl font-medium text-gray-800 dark:text-gray-200">
             Game 1
           </p>
           <div className="pointer-events-none absolute inset-0 h-full bg-[radial-gradient(circle_at_50%_120%,rgba(120,119,198,0.3),rgba(255,255,255,0))]" />
         </MagicCard>
-        <MagicCard className="flex w-full cursor-pointer flex-col items-center justify-center overflow-hidden p-20 shadow-2xl">
+        <MagicCard className="flex w-4/2 sm:w-4/3 md:w-1/4 lg:1/4  cursor-pointer flex-col items-center justify-center overflow-hidden p-20 shadow-2xl">
           <p className="z-10 whitespace-nowrap text-4xl font-medium text-gray-800 dark:text-gray-200">
             Game 2
           </p>
           <div className="pointer-events-none absolute inset-0 h-full bg-[radial-gradient(circle_at_50%_120%,rgba(120,119,198,0.3),rgba(255,255,255,0))]" />
         </MagicCard>
-        <MagicCard className="flex w-full cursor-pointer flex-col items-center justify-center overflow-hidden p-20 shadow-2xl">
+        <MagicCard className="flex w-4/2 sm:w-4/3 md:w-1/4 lg:1/4 cursor-pointer flex-col items-center justify-center overflow-hidden p-20 shadow-2xl">
           <p className="z-10 whitespace-nowrap text-4xl font-medium text-gray-800 dark:text-gray-200">
             Game 3
           </p>
           <div className="pointer-events-none absolute inset-0 h-full bg-[radial-gradient(circle_at_50%_120%,rgba(120,119,198,0.3),rgba(255,255,255,0))]" />
         </MagicCard>
-        <MagicCard className="flex w-full cursor-pointer flex-col items-center justify-center overflow-hidden p-20 shadow-2xl">
+        <MagicCard className="flex w-4/2 sm:w-4/3 md:w-1/4 lg:1/4  cursor-pointer flex-col items-center justify-center overflow-hidden p-20 shadow-2xl">
           <p className="z-10 whitespace-nowrap text-4xl font-medium text-gray-800 dark:text-gray-200">
             Game 4
           </p>
           <div className="pointer-events-none absolute inset-0 h-full bg-[radial-gradient(circle_at_50%_120%,rgba(120,119,198,0.3),rgba(255,255,255,0))]" />
         </MagicCard>
-        
-      </MagicContainer>
-      <MagicContainer
-        className={
-          "mt-60 flex h-[500px] w-full flex-col gap-4 px-14 pb-10 md:mt-20 lg:mt-20 lg:h-[300px] lg:flex-row "
-        }
-      >
-        
-       
-        <MagicCard className="flex w-full cursor-pointer flex-col items-center justify-center overflow-hidden p-20 shadow-2xl">
+        <MagicCard className="flex w-4/2 sm:w-4/3 md:w-1/4 lg:1/4 cursor-pointer flex-col items-center justify-center overflow-hidden p-20 shadow-2xl">
           <p className="z-10 whitespace-nowrap text-4xl font-medium text-gray-800 dark:text-gray-200">
             Game 5
           </p>
           <div className="pointer-events-none absolute inset-0 h-full bg-[radial-gradient(circle_at_50%_120%,rgba(120,119,198,0.3),rgba(255,255,255,0))]" />
         </MagicCard>
-        <MagicCard className="flex w-full cursor-pointer flex-col items-center justify-center overflow-hidden p-20 shadow-2xl">
+        <MagicCard className="flex w-4/2 sm:w-4/3 md:w-1/4 lg:1/4 cursor-pointer flex-col items-center justify-center overflow-hidden p-20 shadow-2xl">
           <p className="z-10 whitespace-nowrap text-4xl font-medium text-gray-800 dark:text-gray-200">
             Game 6
           </p>
           <div className="pointer-events-none absolute inset-0 h-full bg-[radial-gradient(circle_at_50%_120%,rgba(120,119,198,0.3),rgba(255,255,255,0))]" />
-        </MagicCard>
-        <MagicCard className="flex w-full cursor-pointer flex-col items-center justify-center overflow-hidden p-20 shadow-2xl">
-          <p className="z-10 whitespace-nowrap text-4xl font-medium text-gray-800 dark:text-gray-200">
-            Game 7
-          </p>
-          <div className="pointer-events-none absolute inset-0 h-full bg-[radial-gradient(circle_at_50%_120%,rgba(120,119,198,0.3),rgba(255,255,255,0))]" />
-        </MagicCard>
-        <MagicCard className="flex w-full cursor-pointer flex-col items-center justify-center overflow-hidden p-20 shadow-2xl">
-          <p className="z-10 whitespace-nowrap text-4xl font-medium text-gray-800 dark:text-gray-200">
-            Game 8
-          </p>
-          <div className="pointer-events-none absolute inset-0 h-full bg-[radial-gradient(circle_at_50%_120%,rgba(120,119,198,0.3),rgba(255,255,255,0))]" />
-        </MagicCard>
-        
+        </MagicCard>            
       </MagicContainer>
      </div> 
-      
     );
+           
   }
+  
   
