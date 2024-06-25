@@ -54,7 +54,6 @@ export default function IndexPage() {
         >
           GitHub
         </Link>
-        {/* <RetroGrid /> */}
       </div>
     
     </section>
