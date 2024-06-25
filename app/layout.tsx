@@ -44,7 +44,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <head />
         <body
           className={cn(
-            "min-h-screen bg-background font-sans antialiased",
+            "max-h-auto bg-background font-sans antialiased",
             fontSans.variable
           )}
         >
@@ -59,8 +59,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
                 </div>
               </div>
             </div>
-            <div className="pt-20">
-              <div className="flex min-h-64 items-center justify-center rounded-lg bg-white dark:bg-black overflow-hidden">
+            {/* <div className="pt-20"> */}
+              <div className="flex items-center justify-center rounded-lg bg-white dark:bg-black overflow-hidden h-auto">
                 {/* <NostalgiaPage /> */}
                 <TextReveal
            
@@ -75,7 +75,7 @@ Remember the thrill of your first high score?"
 
 Experience Retro Gaming Like Never Before
 
-Revisit the timeless gameplay that defined a generation with enhanced graphics, smooth controls, and exclusive content.
+Revisit the timeless gameplay that defined a generation with enhanced graphics, smooth controls, and exclusive content. Whether you're a seasoned gamer or new to the retro scene, there's something for everyone.
 
 Join a Community of Gamers.
 
@@ -85,7 +85,7 @@ Join a Community of Gamers.
                 
               </div>
       
-            </div>
+            {/* </div> */}
             <GameCard />
             <SiteFooter className=" fixed border-t bottom-0 inset-x-0 sm:static" />
             
