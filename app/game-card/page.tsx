@@ -5,7 +5,7 @@ import {
   
   export default function GameCard() {
     return (
-        <div className="pt-20 sm:pt-8 lg:pt-25 mx-auto flex max-w-full flex-col items-center space-y-4 text-center mt-24 lg:mt-0 md:mt-0 sm:mt-0">
+        <div className="mx-auto flex max-w-full flex-col items-center space-y-4 text-center">
         <h2 className="font-heading text-4xl leading-[1.1] sm:text-6xl md:text-3xl lg:text-5xl font-bold">
           Our Retro Recommendations
         </h2>
@@ -15,7 +15,7 @@ import {
      
       <MagicContainer
         className={
-          "flex h-[500px] w-full flex-col gap-4 lg:h-[300px] lg:flex-row px-14 mt-60 lg:mt-20 md:mt-20 pb-10 "
+          "mt-60 flex h-[500px] w-full flex-col gap-4 px-14 pb-10 md:mt-20 lg:mt-20 lg:h-[300px] lg:flex-row "
         }
       >
         
@@ -48,7 +48,7 @@ import {
       </MagicContainer>
       <MagicContainer
         className={
-          "flex h-[500px] w-full flex-col gap-4 lg:h-[300px] lg:flex-row px-14 mt-60 lg:mt-20 md:mt-20 pb-10 "
+          "mt-60 flex h-[500px] w-full flex-col gap-4 px-14 pb-10 md:mt-20 lg:mt-20 lg:h-[300px] lg:flex-row "
         }
       >
         
@@ -79,7 +79,8 @@ import {
         </MagicCard>
         
       </MagicContainer>
-      </div>
+     </div> 
+      
     );
   }
   

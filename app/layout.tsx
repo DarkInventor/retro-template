@@ -60,20 +60,22 @@ export default function RootLayout({ children }: RootLayoutProps) {
               </div>
             </div>
             <div className="pt-20">
-              <div className="z-10 flex min-h-64 items-center justify-center rounded-lg bg-white dark:bg-black">
+              <div className="flex min-h-64 items-center justify-center rounded-lg bg-white dark:bg-black overflow-hidden">
                 {/* <NostalgiaPage /> */}
                 <TextReveal
+           
                   text="Unlock the Nostalgia
 
 Remember the thrill of your first high score?"
                 />
 
                 <TextReveal
+
                   text="The excitement of discovering hidden levels? Dive back into the pixelated worlds where legends were born. Our collection of retro games spans the golden era of gaming, from arcade classics to console favorites.
 
 Experience Retro Gaming Like Never Before
 
-Revisit the timeless gameplay that defined a generation with enhanced graphics, smooth controls, and exclusive content. Whether you're a seasoned gamer or new to the retro scene, there's something for everyone.
+Revisit the timeless gameplay that defined a generation with enhanced graphics, smooth controls, and exclusive content.
 
 Join a Community of Gamers.
 
@@ -85,7 +87,7 @@ Join a Community of Gamers.
       
             </div>
             <GameCard />
-            <SiteFooter className=" fixed border-t bottom-0 inset-x-0 sm:static bg-neutral-100" />
+            <SiteFooter className=" fixed border-t bottom-0 inset-x-0 sm:static" />
             
             {/* <div className="fixed bottom-0 inset-x-0 sm:static bg-neutral-900/3"> */}
              
